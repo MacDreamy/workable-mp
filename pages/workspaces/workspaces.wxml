@@ -1,0 +1,15 @@
+<!--pages/workspaces/workspaces.wxml-->
+<view style="text-align: center"><h1>Work a </h1><image class='bull-icon' src="{{src}}"></image></view>
+
+<text>Locations near you...</text>
+
+<view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+  <view class="card-category">Workspace Title</view>
+  <view class="card-description">
+    <h2>Workspace Name</h2>
+  </view>
+</view>
+
+
+<button bindtap="goToHomePage">Go to Home page</button>
+
