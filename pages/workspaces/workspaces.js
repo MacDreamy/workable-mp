@@ -3,7 +3,7 @@ Page({
 
   data: {
     text: 'Who is here?',
-    src: '../../lib/assets/images/bull.png'
+    src: '../../lib/assets/images/bull_red.png'
   },
 
   onLoad: function (options) {
