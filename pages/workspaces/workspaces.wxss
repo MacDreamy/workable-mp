@@ -366,3 +366,7 @@ h1 {
 .bottom-end{
   margin-bottom: 30rpx;
 }
+
+.star-solid{
+  background-image: '../../lib/assets/images/icon/star-solid.png';
+}

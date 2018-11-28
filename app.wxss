@@ -8,3 +8,17 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.star {
+  background-size: cover;
+  background-position: center center;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.star-full {
+  background-image: url('/lib/assets/icon/star-solid.png')
+}
+
+
+/* blog.ellerystars.com/stars/ */
