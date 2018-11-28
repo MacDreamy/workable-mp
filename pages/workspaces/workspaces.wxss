@@ -10,6 +10,14 @@ h1 {
   height: 80rpx;
 }
 
+/*分割线样式*/
+.divLine{
+ /* background: #E0E3DA; */
+ width: 100%;
+ /* height: 5rpx; */
+ margin-top: 20rpx;
+}
+
 .card {
   height: 50vw;
   width: 50vw;
