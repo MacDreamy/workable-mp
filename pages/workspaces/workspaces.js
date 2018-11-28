@@ -2,7 +2,6 @@
 Page({
 
   data: {
-    text: 'Who is here?',
     src: '../../lib/assets/images/bull_red.png'
   },
 
@@ -11,7 +10,7 @@ Page({
   },
 
   onReady: function () {
-    console.log(this.data.text)
+
   },
 
   onShow: function () {
@@ -37,7 +36,14 @@ Page({
   onShareAppMessage: function () {
 
   },
+  showWorkspace(e) {
+    const data = e.currentTarget.dataset;
+    const workspace = data.workspace;
 
+    wx.navigateTo({
+      url: '/pages/space/space?id=${workspace.id}',
+    });
+  },
   goToHomePage: function () {
     wx.navigateTo({
       url: '/pages/index/index'
