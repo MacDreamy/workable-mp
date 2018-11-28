@@ -1,11 +1,11 @@
 <!--pages/workspaces/workspaces.wxml-->
-<view style="text-align: center"><h1>Work a </h1><image class='bull-icon' src="{{src}}"></image></view>
+<view style="text-align: center; padding-bottom: 50rpx;" ><h1>Work a </h1><image class='bull-icon' src="{{src}}"></image></view>
 
 
-     <!-- 分割线 -->
-  <view class="divLine"></view>
+<view class="divLine"></view>
+<!-- 分割线 -->
 
-<text>Locations near you...</text>
+<text style="padding: 50rpx;">Locations near you...</text>
 
 <!-- card flex -->
 <view style="display:flex; flex-wrap:wrap;">
@@ -15,11 +15,31 @@
 
 
 
+
+
+
+
+
 <view class="flex-wrp">
 
+
+
   <view class="flex-item">
-    <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-      <view class="card-category">Workspace Title</view>
+    <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url({{url}});">
+      <view class="card-category">{{category}}</view>
+      <view class="card-description">
+        <h2>{{workspace_name}}</h2>
+      </view>
+    </view>
+  </view>
+
+
+
+
+<!-- example: -->
+  <view class="flex-item">
+    <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/chengdu.jpg');">
+      <view class="card-category">Workspace Category</view>
       <view class="card-description">
         <h2>Workspace Name</h2>
       </view>
@@ -27,8 +47,9 @@
   </view>
 
   <view class="flex-item">
-    <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-      <view class="card-category">Workspace Title</view>
+    <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/toronto.jpg');">
+      <view class="card-category">Workspace Category</view>
+      
       <view class="card-description">
         <h2>Workspace Name</h2>
       </view>
@@ -36,8 +57,8 @@
   </view>
 
     <view class="flex-item">
-    <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-      <view class="card-category">Workspace Title</view>
+    <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/tokyo.jpg');">
+      <view class="card-category">Workspace Category</view>
       <view class="card-description">
         <h2>Workspace Name</h2>
       </view>
@@ -46,37 +67,5 @@
 
 </view>
 
-<button bindtap="goToHomePage">Go to Home page</button>
+<button bindtap="goToHomePage" class='bottom-end'>Go to Home page</button>
 
-
-
-
-    <!-- HEAD PART  -->
-    <view class="flex-item-head ">
-      <view class="card-head">
-          <!-- HEAD LEFT (avatar) -->
-          <view class="card-head-left">
-              <image class="avatar" src='http://ac-gjevwccm.clouddn.com/8f4d4b771ceaf659917e'></image>
-          </view>
-          <!-- HEAD RIGHT (name + discount)  -->
-          <view class="card-head-right">
-            <view class="card-head-between-name-discount">
-              <!-- FOR NAME AND LOCATION  -->
-              <view class='flex-item-name'> 
-                <view class='flex-for-name-time'>
-                  <view class='username-font-size-normal'>惠优宝</view>
-                  <view class='detail-font-head'>
-                      Hui You Bao
-                      
-                  </view>
-                </view>  
-              </view>
-              <!-- FOR NAME AND LOCATION  -->
-
-              
-            </view>
-         </view>
-         <!-- HEAD RIGHT (name + discount)  -->
-      </view>
-    </view>
-    <!-- HEAD PART  -->
