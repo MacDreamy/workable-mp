@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/space/space",
     "pages/workspaces/workspaces",
     "pages/logs/logs"
   ],
@@ -9,5 +10,34 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFE",
+    "borderStyle": "#D3D3D3",
+    "color": "#888888",
+    "list": [{
+        "pagePath": "pages/workspaces/workspaces",
+        "text": "Workspaces",
+        "iconPath": "/lib/assets/images/workspace-inactive.png",
+        "selectedIconPath": "/lib/assets/images/workspace-active.png"
+      },
+      {
+        "pagePath": "pages/workspaces/workspaces",
+        "text": "Search",
+        "iconPath": "/lib/assets/images/search-active.png",
+        "selectedIconPath": "/lib/assets/images/search-solid.png"
+      },
+      {
+        "pagePath": "pages/workspaces/workspaces",
+        "text": "Recent",
+        "iconPath": "/lib/assets/images/pheonix-inactive.png",
+        "selectedIconPath": "/lib/assets/images/pheonix-active.png"
+      },
+      {
+        "pagePath": "pages/workspaces/workspaces",
+        "text": "Account",
+        "iconPath": "/lib/assets/images/account-inactive.png",
+        "selectedIconPath": "/lib/assets/images/account-active.png"
+    }]
   }
 }

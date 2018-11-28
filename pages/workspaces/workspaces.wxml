@@ -22,23 +22,9 @@
 
 <view class="flex-wrp">
 
-
-
-  <view class="flex-item">
-    <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url({{url}});">
-      <view class="card-category">{{category}}</view>
-      <view class="card-description">
-        <h2>{{workspace_name}}</h2>
-      </view>
-    </view>
-  </view>
-
-
-
-
 <!-- example: -->
   <view class="flex-item">
-    <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/chengdu.jpg');">
+    <view bindtap="showWorkspace" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/chengdu.jpg');">
       <view class="card-category">Workspace Category</view>
       <view class="card-description">
         <h2>Workspace Name</h2>
@@ -47,7 +33,7 @@
   </view>
 
   <view class="flex-item">
-    <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/toronto.jpg');">
+    <view bindtap="showWorkspace" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/toronto.jpg');">
       <view class="card-category">Workspace Category</view>
       
       <view class="card-description">
@@ -57,7 +43,7 @@
   </view>
 
     <view class="flex-item">
-    <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/tokyo.jpg');">
+    <view bindtap="showWorkspace" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/tokyo.jpg');">
       <view class="card-category">Workspace Category</view>
       <view class="card-description">
         <h2>Workspace Name</h2>
