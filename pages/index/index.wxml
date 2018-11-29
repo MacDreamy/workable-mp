@@ -1,6 +1,10 @@
 <!--index.wxml-->
 <view>
-<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Get User Info</button>
+<!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Get User Info</button> -->
+
+<view style="text-align: center;">Welcome</view>
+
+<button bindtap="goToWorkspacesPage" class='bottom-end'>Find a place to Work</button>
 </view>
 <view class="container">
   <view class="userinfo">

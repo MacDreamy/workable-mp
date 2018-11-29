@@ -1,11 +1,28 @@
 // pages/workspaces/workspaces.js
+let app = getApp()
+
 Page({
 
   data: {
-    src: '../../lib/assets/images/bull_red.png'
+    src: '../../lib/assets/images/bull_red.png',
   },
 
   onLoad: function (options) {
+    let page = this;
+
+    //Request API to get workspace
+    wx.request({
+      url:   "https://workspace-api333.herokuapp.com/api/v1/workspaces",
+      method: 'GET',
+      success(res) {
+        const workspaces = res.data;
+        page.setData({
+          workspaces: workspaces
+        });
+
+        wx.hideToast();
+      }
+    });
 
   },
 
@@ -37,11 +54,10 @@ Page({
 
   },
   showWorkspace(e) {
-    const data = e.currentTarget.dataset;
-    const workspace = data.workspace;
+    const workspaceId = e.currentTarget.dataset.id;
 
     wx.navigateTo({
-      url: '/pages/space/space?id=${workspace.id}',
+      url: `/pages/space/space?id=${workspaceId}`,
     });
   },
   goToHomePage: function () {

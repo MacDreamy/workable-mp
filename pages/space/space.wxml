@@ -1,3 +1,17 @@
 <!--pages/space/space.wxml-->
-<text>pages/space/space.wxml</text>
+<image src='http://blog.ellerystars.com/wework_placeholder/chengdu.jpg'></image>
+<!-- <view>Average Rating: {{workspace.avg_rating}}</view> -->
+<!-- <view style="text-align: center; padding-bottom: 50rpx;" ><h1>Workspace Name</h1></view> -->
+<view>{{workspace.name}}</view>
 
+<view>Address: {{workspace.address}}</view>
+<view>Phone Number: {{workspace.phone_number}}</view>
+
+<view wx:if="{{workspace.closed == false}}">Open</view>
+<view wx:if="{{workspace.closed}}">Closed</view>
+<view>Hours of operation: {{workspace.open_time}} - {{workspace.close_time}}</view>
+
+<!-- <view wx:if="{{workspace.air_purifier_onsite
+ == false}}">Air</view>
+<view wx:if="{{workspace.air_purifier_onsite
+}}">Closed</view> -->
