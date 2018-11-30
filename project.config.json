@@ -37,12 +37,18 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "workspaces",
-					"pathName": "pages/workspaces/workspaces"
+					"pathName": "pages/workspaces/workspaces",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "show workspace",
+					"pathName": "pages/space/space"
 				}
 			]
 		}

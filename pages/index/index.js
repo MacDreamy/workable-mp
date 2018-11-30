@@ -9,5 +9,11 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo
     })
+  },
+  goToWorkspacesPage: function() {
+    wx.switchtab({
+      url: '/pages/workspaces/workspaces'
+    })
+    console.log("click")
   }
 })

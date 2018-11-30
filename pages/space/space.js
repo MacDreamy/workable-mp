@@ -13,6 +13,21 @@ Page({
    */
   onLoad: function (options) {
     this.setData({spaceId: options.id})
+
+    let that = this;
+
+    wx.request({
+      url: `https://workspace-api333.herokuapp.com/api/v1/workspaces/${options.id}`,
+      method: 'GET',
+      success(res) {
+        const workspace = res.data;
+        that.setData({
+          workspace
+        });
+        wx.hideToast();
+        console.log(workspace);
+      }
+    });
   },
 
   /**

@@ -1,7 +1,6 @@
 <!--pages/workspaces/workspaces.wxml-->
 <view style="text-align: center; padding-bottom: 50rpx;" ><h1>Work a </h1><image class='bull-icon' src="{{src}}"></image></view>
 
-
 <view class="divLine"></view>
 <!-- 分割线 -->
 
@@ -15,43 +14,18 @@
 
 
 
-
-
-
-
-
-<view class="flex-wrp">
-
-<!-- example: -->
+<block wx:for='{{ workspaces }}'>
   <view class="flex-item">
-    <view bindtap="showWorkspace" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/chengdu.jpg');">
-      <view class="card-category">Workspace Category</view>
+    <view bindtap="showWorkspace" data-id='{{item.id}}'class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/chengdu.jpg');">
+      <view class="card-category">{{item.category}}
+      <view style="align:right;">Avg Rating: {{item.avg_rating}}</view>
+      </view>
       <view class="card-description">
-        <h2>Workspace Name</h2>
+        <h2>{{item.name}}</h2>
+
       </view>
     </view>
   </view>
-
-  <view class="flex-item">
-    <view bindtap="showWorkspace" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/toronto.jpg');">
-      <view class="card-category">Workspace Category</view>
-      
-      <view class="card-description">
-        <h2>Workspace Name</h2>
-      </view>
-    </view>
-  </view>
-
-    <view class="flex-item">
-    <view bindtap="showWorkspace" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/tokyo.jpg');">
-      <view class="card-category">Workspace Category</view>
-      <view class="card-description">
-        <h2>Workspace Name</h2>
-      </view>
-    </view>
-  </view>
-
-</view>
+</block>
 
 <button bindtap="goToHomePage" class='bottom-end'>Go to Home page</button>
-
