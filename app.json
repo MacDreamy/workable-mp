@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/space/space",
     "pages/workspaces/workspaces",
+    "pages/new/new",
     "pages/logs/logs"
   ],
   "window":{
@@ -28,10 +29,10 @@
         "selectedIconPath": "/lib/assets/images/search-solid.png"
       },
       {
-        "pagePath": "pages/workspaces/workspaces",
-        "text": "Recent",
-        "iconPath": "/lib/assets/images/pheonix-inactive.png",
-        "selectedIconPath": "/lib/assets/images/pheonix-active.png"
+        "pagePath": "pages/new/new",
+        "text": "Add",
+        "iconPath": "/lib/assets/images/plus-inactive.png",
+        "selectedIconPath": "/lib/assets/images/plus-active.png"
       },
       {
         "pagePath": "pages/workspaces/workspaces",

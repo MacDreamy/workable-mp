@@ -1,0 +1,110 @@
+<!--pages/new/new.wxml-->
+<view style="text-align: center; padding-bottom: 50rpx;" ><h1>Work a </h1><image class='bull-icon' src="{{src}}"></image></view>
+
+
+<text style="text-align: center; padding-bottom: 50rpx;">Add a Workspace</text>
+
+
+<!-- <view class="section">
+  <view class="section__title">Category</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      Current selection: {{array[index]}}
+    </view>
+  </picker>
+</view> -->
+<!-- <view class="section">
+  <view class="section__title">Multi-column selector</view>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+      Current selection: {{multiArray[0][multiIndex[0]]}}, {{multiArray[1][multiIndex[1]]}}, {{multiArray[2][multiIndex[2]]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">Time selector</view>
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+      Current selection: {{time}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section__title">Date selector</view>
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      Current selection: {{date}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">Province/city/district selector</view>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      Current selection: {{region[0]}}, {{region[1]}}, {{region[2]}}
+    </view>
+  </picker>
+</view> -->
+
+
+<view class="section">
+  <view class="section__title">Name</view>
+  <input name="input" placeholder="please input here" />
+  <!-- <view class="section__title">Category</view>
+  <input name="input" placeholder="please input here" /> -->
+</view>
+
+<view class="section">
+  <view class="section__title">Category</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      Current selection: {{array[index]}}
+    </view>
+  </picker>
+</view>
+
+<button bindtap="grantAuthorizeLocation">Address</button>
+
+
+
+<!-- <checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="{{items}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</checkbox-group> -->
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <!-- <view class="section section_gap">
+    <view class="section__title">switch</view>
+    <switch name="switch"/>
+  </view> -->
+
+  <view class="section section_gap">
+    <view class="section__title">WiFi-Speed</view>
+    <slider name="slider" show-value min="1" max="5" ></slider>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">Average Noise Level</view>
+    <slider name="slider" show-value min="1" max="5" ></slider>
+  </view>
+
+  <!-- <view class="section section_gap">
+    <view class="section__title">radio</view>
+    <radio-group name="radio-group">
+      <label><radio value="radio1"/>radio1</label>
+      <label><radio value="radio2"/>radio2</label>
+    </radio-group>
+  </view> -->
+  <view class="section section_gap">
+    <view class="section__title">Features</view>
+    <checkbox-group name="checkbox">
+      <label><checkbox value="checkbox1"/>Air Purifier</label>
+      <label><checkbox value="checkbox2"/>Smoke Free</label>
+      <label><checkbox value="checkbox1"/>Power Sources</label>
+    </checkbox-group>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+  </view>
+</form>

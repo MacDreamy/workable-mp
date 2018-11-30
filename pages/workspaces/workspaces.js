@@ -16,6 +16,7 @@ Page({
       method: 'GET',
       success(res) {
         const workspaces = res.data;
+        console.log(3242342, workspaces);
         page.setData({
           workspaces: workspaces
         });

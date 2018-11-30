@@ -1,0 +1,5 @@
+/* pages/new/new.wxss */
+.bull-icon{
+  width:80rpx;
+  height: 80rpx;
+}
